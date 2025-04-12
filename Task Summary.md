@@ -14,8 +14,8 @@
 (Let's divide them by 2 for the sake of my sanity)
 
 ## Tech Stack
-Required - Vue.js, Firebase Auth, Session Management, Tailwind, Pinia/Vuex, Pydantic
-Maybes - Three.js, Websockets
+- Required - Vue.js, Firebase Auth, Session Management, Tailwind, Pinia/Vuex, Pydantic
+- Maybes - Three.js, Websockets
 
 
 ## Features, Functions and Modules
@@ -40,7 +40,7 @@ Maybes - Three.js, Websockets
 - SignIn/SignOut/SignUp
 
 
-# Data Schema and Strategy
+## Data Schema and Strategy
 - idk, we ball on this one
 
 ## References
