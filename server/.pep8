@@ -1,0 +1,4 @@
+[pycodestyle]
+indent_size = 4
+tabsize = 4
+ignore = E101, W191
