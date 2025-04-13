@@ -53,3 +53,16 @@
 1. Dnd
     1. https://github.com/SortableJS/Vue.Draggable
     2. https://learnvue.co/articles/vue-drag-and-drop
+
+
+## Draft 1 (Websocket Logic)
+1. Client creates connection 
+2. Client Clicks on Start
+3. Send message where type is "start" to socket
+4. Socket Sends back two arrays
+5. Client is shown an 2 arrays and has to input 1 number so that sum of both arrays are equal
+6. Client then sends answer to socket
+7. Socket evaluates if the answer is correct
+8. If right sends success
+9. If wrong send fail
+10. wait for step 1
