@@ -1,4 +1,6 @@
-<template>
+<template class="flex flex-col max-w-[100vh]">
+	<!-- <GameView /> -->
+	<Scale />
 	<div class="container mx-auto max-w-lg p-6">
 		<h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Array Sum Game</h1>
 		<button @click="startGame" :disabled="isConnecting"
@@ -44,6 +46,8 @@ import {
 	type ResultMessage,
 	type ErrorMessage,
 } from './types';
+// import GameView from './views/GameView.vue';
+import Scale from './views/Scale.vue';
 
 const array1 = ref<number[]>([]);
 const array2 = ref<number[]>([]);
@@ -129,7 +133,7 @@ const submitAnswer = () => {
 
 onUnmounted(() => {
 	if (ws && ws.readyState !== WebSocket.CLOSED) {
-		ws.close();
+		ws.close()
 	}
 });
 </script>
