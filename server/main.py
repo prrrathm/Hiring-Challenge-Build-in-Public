@@ -1,8 +1,10 @@
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import HTMLResponse
 import random
+from routers import game
 
 app = FastAPI()
+
 
 html = """
 <!DOCTYPE html>
@@ -88,6 +90,8 @@ html = """
     </body>
 </html>
 """
+
+app.include_router(game.router, prefix="/game", tags=["Game"])
 
 @app.get("/")
 async def get():
